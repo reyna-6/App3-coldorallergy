@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Reyna Shah
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -17,7 +17,7 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The goal of this code is to make an app to diagnose symptoms of either a code or allergies through a series of yes or no questions. 
  
 Known Issues:
 blah, blah, blah, blah
@@ -52,6 +52,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 
+	var resultText = document.getElementById("results");
   </script>
 
 
@@ -143,6 +144,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Are your symptoms seaonal or chronic?</p>
 		<a href="#five" onclick="allergyAdd();" class="w3-btn w3-pink w3-round"> yes </a>
 		<a href="#five" onclick="coldAdd();" class="w3-btn w3-pink w3-round"> no </a>
+	</div>
+	
+		
+</div>	
+
+	<div class="page" id="five">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Results</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Click for Results!</p>
+		<a href="#results" onclick="allergyAdd();" class="w3-btn w3-pink w3-round"> RESULTS </a>
 	</div>
 		
 		
