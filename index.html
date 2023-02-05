@@ -33,20 +33,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
-
-
+	
+<!-- The code in the script defines two variables and has two functions 
+     that determine if you have an allergy or a cold or maybe both???
+-->
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var allergy_count = 0; <!-- This creates a variable called allergy_count -->
+        var cold_count = 0; <!-- This create a variable called cold_count -->
 
 
-        function allergyAdd(){
+        function allergyAdd(){ <!-- When called, this function increments allergy_count by one -->
             allergy_count = allergy_count + 1;
 		alert(allergy_count);
 
         }
 
-        function coldAdd(){
+        function coldAdd(){ <!-- When called, this function increments cold_count by one -->
             cold_count = cold_count + 1;
         }
 
