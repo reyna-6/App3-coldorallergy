@@ -52,10 +52,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 	
 	function results() {
-        
+        resultText.innerHTML = "Probability it is allergies =" + allergyPercent
          var allergyPercent = "allergyPercent";
-         document.getElementById("results").innerHTML = allergyPercent 
          allergyPercent = (allergy_count)/(allergy_count + cold_count))*100
+		
+		
 	
   </script>
 
@@ -178,7 +179,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p id="results">resultText</p>
 	
 	</div>
-		
+	
+	<script>
+         document.getElementById("results").innerHTML = allergyPercent 		
+	</script>
 		
 </div>
 		
