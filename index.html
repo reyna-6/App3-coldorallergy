@@ -51,6 +51,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 	
+	function results() {
+        
+         var allergyPercent = "allergyPercent";
+         document.getElementById("results").innerHTML = allergyPercent 
+         allergyPercent = (allergy_count)/(allergy_count + cold_count))*100
 	
   </script>
 
@@ -171,12 +176,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p id="results">resultText</p>
-	<script>
-		function results() {
-                var resultText = "allergyPercent";
-                document.getElementById("results").innerHTML = resultText;
-                allergyPercent = (allergy_count)/(allergy_count + cold_count))*100
-	<script>
+	
 	</div>
 		
 		
