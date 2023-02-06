@@ -17,7 +17,7 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-The goal of this code is to make an app to diagnose symptoms of either a code or allergies through a series of yes or no questions. 
+The goal of this code is to make an app to diagnose symptoms of either a cold or allergies through a series of yes or no questions. 
  
 Known Issues:
 blah, blah, blah, blah
@@ -51,10 +51,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 	
-	function results(){
-		allergyPercent = (allergy_count/(allergy_count + cold_count))*100
-		coldPercent = (cold_count/(allergy_count + cold_count))*100
-	}
 	
   </script>
 
@@ -93,7 +89,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<a href="#one" class="w3-btn w3-pink w3-round"> Get Started </a>
 	
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at 
+	   The University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- it is for 
+		entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas 
+		system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
@@ -173,8 +172,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p id="results">resultText</p>
 	<script>
-		var resultText = document.getElementById("results"); 
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+		function results() {
+                var resultText = "allergyPercent";
+                document.getElementById("results").innerHTML = resultText;
+                allergyPercent = (allergy_count)/(allergy_count + cold_count))*100
 	<script>
 	</div>
 		
