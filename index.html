@@ -1,6 +1,9 @@
 <!DOCTYPE html> 
 <html> 
-<!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
+<!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at 
+The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment 
+purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for 
+anything related to this code.
  
 THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
@@ -35,8 +38,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
    </head> 
 	
 <!-- The code in the script defines two variables and has two functions 
-     that determine if you have an allergy or a cold or maybe both???
--->
+     that determine if you have an allergy or a cold or maybe both???-->
+	
+	
 <script>
         var allergy_count = 0; <!-- This creates a variable called allergy_count -->
         var cold_count = 0; <!-- This create a variable called cold_count -->
@@ -52,9 +56,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
         }
 	
-	function results(){
-         var allergyPercent = (allergy_count)/(allergy_count + cold_count)*100
-	 var coldPercent = (cold_count)/(allergy_count + cold_count)*100
+	/*  
+	
+	The first two variables below the function tell the computer how to calculate cold and allergy percent.
+	For example the percent chance that someone might have allergies is calculated by the amount of times a button was pressed that has the allergy
+	count function onclick divided by four times 100. 
+	
+	The last variable */
+	
+	
+	function results(){ //when the button on the last page is pressed it can call this function and calculatethe percentages for cold and allergy symptoms.
+         var allergyPercent = (allergy_count)/(4)*100 //
+	 var coldPercent = (cold_count)/(4)*100
          var resultText = document.getElementById("results");
 		
     
@@ -129,11 +142,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 </div>
 	
+	<!-- The code below makes the heading for the second page with id="two" which I changed to say Question 2.-->
 
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
+	
+	<!-- -->
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
@@ -194,9 +210,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p id="last">Results</p>
 
       
-		
-		
-		
 </div>
 		
 		
