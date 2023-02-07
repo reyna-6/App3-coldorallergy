@@ -58,10 +58,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
          var allergyPercent = (allergy_count)/(4)*100  //This variable calculates allergy perecent by dividing the number of times a button with onclick allergy_add is pressed by 4 and then multiplying by 100.
 	 var coldPercent = (cold_count)/(4)*100  //This variable calculates cold percent by diving the number of times a button with onclick cold_add is pressed by 4 and then multiplying by 100.
          var resultText = document.getElementById("results"); //This variable captures the content of the results paragraph.	  
-		
-			
-         {resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%";}
-	 //The code above changes what goes on the last page with the id="results" all of the stuff in quotations will show up how it is written and the white parts will call the variables above.
+	 resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%";} //The code above changes what goes on the last page with the id="results" all of the stuff in quotations will show up how it is written and the white parts will call the variables above.
 	
 	
   </script>
