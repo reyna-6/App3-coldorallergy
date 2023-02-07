@@ -59,6 +59,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	 var coldPercent = (cold_count)/(4)*100  //This variable calculates cold percent by diving the number of times a button with onclick cold_add is pressed by 4 and then multiplying by 100.
          var resultText = document.getElementById("results"); //This variable captures the content of the results paragraph.	  
 		
+			
          {resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%";}
 	 //The code above changes what goes on the last page with the id="results" all of the stuff in quotations will show up how it is written and the white parts will call the variables above.
 	
@@ -188,7 +189,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> <!-- The code below is for the main content on the last page -->
 		
-		<p id="last">Results</p> <!-- This code is like the placeholder for the content on the last page where the percentages will be displayed. -->
+		<p id="results">Results</p> <!-- This code is like the placeholder for the content on the last page where the percentages will be displayed. -->
 
       
 </div>
