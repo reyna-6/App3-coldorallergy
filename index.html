@@ -20,7 +20,8 @@ Brief Description of Goal of Code:
 The goal of this code is to make an app to diagnose symptoms of either a cold or allergies through a series of yes or no questions. 
  
 Known Issues:
-blah, blah, blah, blah
+The code will not work when the back arrow is pressed to go to a previous page. The allergy or cold count will be added again and the percentages will not add up in the end.
+Also, this code does not have enough questions or credibility to be used as a diagnostic tool.
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -44,12 +45,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
         function allergyAdd(){ <!-- When called, this function increments allergy_count by one -->
-            allergy_count = allergy_count + 1;
+            allergy_count = allergy_count + 1; //adds one to previous allergy count
 
         }
 
         function coldAdd(){ <!-- When called, this function increments cold_count by one -->
-            cold_count = cold_count + 1;
+            cold_count = cold_count + 1; //adds one to the previous cold count
 		
         }
 	
@@ -185,7 +186,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container"> <!-- The code below is for the main content on the last page -->
-		
 		<p id="results"></p> <!-- This code is like the placeholder for the content on the last page where the percentages will be displayed. -->
 
       
